@@ -25,9 +25,17 @@ public class Main {
         Collections.sort(l2);
 
         int total = 0;
-        for (int i = 0; i < l1.size(); i++) { // they are the same size, only need 1 loop
-            total += abs(l1.get(i) - l2.get(i));
+
+        for (int leftNum : l1) {
+            int multiplier = 0;
+            for (int rightNum : l2) {
+                if (rightNum == leftNum) {
+                    multiplier++;
+                }
+            }
+            total += leftNum * multiplier;
         }
+
         System.out.println(total);
     }
 }
