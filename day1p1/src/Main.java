@@ -12,7 +12,7 @@ public class Main {
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
 
-        List<String> fileInput = Files.readAllLines(Path.of("/home/zenyfh/IdeaProjects/AdventOfCode/day1/src/input.txt"), StandardCharsets.UTF_8);
+        List<String> fileInput = Files.readAllLines(Path.of("/home/zenyfh/IdeaProjects/AdventOfCode/day1p1/src/input.txt"), StandardCharsets.UTF_8);
         for (String line : fileInput) {
             if (Objects.equals(line, "")) {
                 continue;
